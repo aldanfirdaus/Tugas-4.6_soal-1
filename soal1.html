@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Soal nomor 1</title>
+</head>
+   <SCRIPT language="JavaScript">
+function tes() { //membuat fungsi dengan nama tes
+var val1=document.kirim.T1.value //deklarasi variabel dengan nama var1 yang menampung nilai dari kolom input T1
+if(val1>=0 && val1<=40) //melakukan kondisional dengan if 
+   document.kirim.T2.value="E" //menampilkan nilai "E" ke kolom input T2
+if(val1>40 && val1<=55) //melakukan kondisional dengan if 
+   document.kirim.T2.value="D" //menampilkan nilai "D" ke kolom input T2
+if(val1>55 && val1<=60) //melakukan kondisional dengan if 
+   document.kirim.T2.value="C" //menampilkan nilai "C" ke kolom input T2
+if(val1>60 && val1<=65) //melakukan kondisional dengan if 
+   document.kirim.T2.value="BC" //menampilkan nilai "BC" ke kolom input T2
+if(val1>65 && val1<=70) //melakukan kondisional dengan if 
+   document.kirim.T2.value="B" //menampilkan nilai "B" ke kolom input T2
+if(val1>70 && val1<=80) //melakukan kondisional dengan if 
+   document.kirim.T2.value="AB" //menampilkan nilai "AB" ke kolom input T2
+if(val1>80 && val1<=100) //melakukan kondisional dengan if  
+   document.kirim.T2.value="A" //menampilkan nilai "A" ke kolom input T2
+}
+   </SCRIPT>
+<body>
+<form method="POST" name="kirim">
+<p>NILAI ANGKA <input type="text" name="T1" size="20"> <br>
+NILAI HURUF <input type="text" name="T2" size="20">
+</p>
+<p><input type="button" value="TEBAK" name="B1" onclick=tes()>
+</p>
+</form>
+</body>
+</html>
